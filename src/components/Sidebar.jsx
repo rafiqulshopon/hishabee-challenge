@@ -15,7 +15,7 @@ const Sidebar = () => {
         style={{ height: '100%', borderRight: 0 }}
       >
         <Menu.Item key='1' icon={<PieChartOutlined />}>
-          Overview
+          Dashboard
         </Menu.Item>
         <Menu.Item key='2' icon={<DesktopOutlined />}>
           Analytics
