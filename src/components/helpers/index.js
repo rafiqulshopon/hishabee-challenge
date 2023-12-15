@@ -24,18 +24,18 @@ export const pieChartData = {
 };
 
 export const salesData = [
-  { name: 'Jane Smith', amount: 8509.74 },
+  { name: 'Jane Smith', amount: 500 },
   {
     name: 'Edward Johnson',
     amount: 7843.81,
   },
   {
     name: 'Patricia Brown',
-    amount: 7567.51,
+    amount: 800.51,
   },
   {
     name: 'Jennifer Taylor',
-    amount: 7280.92,
+    amount: 1280.92,
   },
   {
     name: 'Michael Davis',
@@ -43,7 +43,7 @@ export const salesData = [
   },
   {
     name: 'Linda Martinez',
-    amount: 9793.42,
+    amount: 7793.42,
   },
   {
     name: 'William Rodriguez',
