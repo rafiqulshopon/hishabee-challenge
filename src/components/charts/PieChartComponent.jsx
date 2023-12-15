@@ -4,7 +4,7 @@ import { Pie } from 'react-chartjs-2';
 import { Button, Dropdown, Menu } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import FileSaver from 'file-saver';
-import mockData from '../helpers/pie.json';
+import mockData from '../helpers/data.json';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
