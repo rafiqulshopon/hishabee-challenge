@@ -6,7 +6,7 @@ import BarChartComponent from './charts/BarChartComponent';
 import PieChartComponent from './charts/PieChartComponent';
 import RecentSalesList from './lists/RecentSalesList';
 import TasksList from './lists/TasksList';
-import { barChartData, pieChartData, salesData, tasksData } from './helpers';
+import { barChartData, salesData, tasksData } from './helpers';
 
 const MainContent = () => {
   return (
@@ -22,7 +22,7 @@ const MainContent = () => {
           <BarChartComponent data={barChartData} />
         </div>
         <div className='p-4 bg-white rounded-lg shadow-md'>
-          <PieChartComponent data={pieChartData} />
+          <PieChartComponent />
         </div>
       </div>
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
