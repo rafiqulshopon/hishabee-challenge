@@ -4,7 +4,9 @@ import SalesCard from './widgets/SalesCard';
 import ActiveUsersCard from './widgets/ActiveUsersCard';
 import BarChartComponent from './charts/BarChartComponent';
 import PieChartComponent from './charts/PieChartComponent';
-import { barChartData, pieChartData } from './helpers';
+import RecentSalesList from './lists/RecentSalesList';
+import TasksList from './lists/TasksList';
+import { barChartData, pieChartData, salesData, tasksData } from './helpers';
 
 const MainContent = () => {
   return (
@@ -21,6 +23,14 @@ const MainContent = () => {
         </div>
         <div className='p-4 bg-white rounded-lg shadow-md'>
           <PieChartComponent data={pieChartData} />
+        </div>
+      </div>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+        <div className='p-4 mt-2 bg-white rounded-lg shadow-md'>
+          <RecentSalesList salesData={salesData} />
+        </div>
+        <div className='p-4 mt-2 bg-white rounded-lg shadow-md'>
+          <TasksList tasksData={tasksData} />
         </div>
       </div>
     </div>

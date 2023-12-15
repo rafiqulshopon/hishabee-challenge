@@ -8,7 +8,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className='h-screen w-64 bg-white shadow-md'>
+    <div className='full-screen w-64 bg-white shadow-md mb-4 rounded-lg'>
       <Menu
         mode='inline'
         defaultSelectedKeys={['1']}
@@ -26,7 +26,6 @@ const Sidebar = () => {
         <Menu.Item key='4' icon={<MailOutlined />}>
           Notifications
         </Menu.Item>
-        {/* Add additional navigation links as needed */}
       </Menu>
     </div>
   );

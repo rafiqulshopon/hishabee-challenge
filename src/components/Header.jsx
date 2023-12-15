@@ -16,7 +16,7 @@ const Header = () => {
   );
 
   return (
-    <div className='flex justify-between items-center p-4 bg-white shadow-md'>
+    <div className='flex justify-between items-center p-4 mx-4 bg-white shadow-md rounded'>
       <div className='font-bold text-lg'>Dashboard</div>
       <div className='flex-grow mx-4'>
         <Input
