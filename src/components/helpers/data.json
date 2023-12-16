@@ -34,23 +34,7 @@
         "December": 7612
       }
     },
-    {
-      "name": "Response",
-      "monthlyRevenue": {
-        "January": 7699,
-        "February": 5779,
-        "March": 2483,
-        "April": 5474,
-        "May": 4883,
-        "June": 8982,
-        "July": 2027,
-        "August": 3206,
-        "September": 11464,
-        "October": 4006,
-        "November": 1906,
-        "December": 11264
-      }
-    },
+
     {
       "name": "Board",
       "monthlyRevenue": {
@@ -85,23 +69,7 @@
         "December": 11172
       }
     },
-    {
-      "name": "Together",
-      "monthlyRevenue": {
-        "January": 7016,
-        "February": 2594,
-        "March": 3976,
-        "April": 19561,
-        "May": 5946,
-        "June": 19683,
-        "July": 1043,
-        "August": 7186,
-        "September": 9799,
-        "October": 19851,
-        "November": 1559,
-        "December": 4087
-      }
-    },
+
     {
       "name": "Fear",
       "monthlyRevenue": {
@@ -119,40 +87,7 @@
         "December": 6586
       }
     },
-    {
-      "name": "Certainly",
-      "monthlyRevenue": {
-        "January": 9442,
-        "February": 7106,
-        "March": 17568,
-        "April": 3335,
-        "May": 7894,
-        "June": 1738,
-        "July": 3984,
-        "August": 6114,
-        "September": 4408,
-        "October": 3354,
-        "November": 18086,
-        "December": 5602
-      }
-    },
-    {
-      "name": "Then",
-      "monthlyRevenue": {
-        "January": 17172,
-        "February": 12544,
-        "March": 9757,
-        "April": 9781,
-        "May": 10617,
-        "June": 18003,
-        "July": 1788,
-        "August": 6648,
-        "September": 16929,
-        "October": 17537,
-        "November": 16153,
-        "December": 17505
-      }
-    },
+
     {
       "name": "Leg",
       "monthlyRevenue": {
@@ -168,74 +103,6 @@
         "October": 15636,
         "November": 15077,
         "December": 14077
-      }
-    },
-    {
-      "name": "Environment",
-      "monthlyRevenue": {
-        "January": 11510,
-        "February": 15557,
-        "March": 3052,
-        "April": 4107,
-        "May": 10584,
-        "June": 3657,
-        "July": 9065,
-        "August": 16706,
-        "September": 2954,
-        "October": 16316,
-        "November": 3284,
-        "December": 19428
-      }
-    },
-    {
-      "name": "Skin",
-      "monthlyRevenue": {
-        "January": 5306,
-        "February": 5382,
-        "March": 4407,
-        "April": 13792,
-        "May": 17921,
-        "June": 12208,
-        "July": 17247,
-        "August": 13334,
-        "September": 10659,
-        "October": 9434,
-        "November": 2397,
-        "December": 5714
-      }
-    },
-    {
-      "name": "Century",
-      "monthlyRevenue": {
-        "January": 7480,
-        "February": 11199,
-        "March": 5444,
-        "April": 6617,
-        "May": 19172,
-        "June": 9654,
-        "July": 11147,
-        "August": 8943,
-        "September": 10647,
-        "October": 9482,
-        "November": 4892,
-        "December": 16002
-      }
-    },
-    {
-      "name": "Actually",
-      "monthlyRevenue": {
-        "January": 19224,
-        "February": 9812,
-        "March": 5822,
-        "April": 1710,
-        "May": 7120,
-        "June": 3217,
-        "July": 8189,
-        "August": 7146,
-        "September": 15600,
-        "October": 15889,
-        "November": 16188,
-        "December": 15214
       }
     },
     {
@@ -255,23 +122,7 @@
         "December": 6579
       }
     },
-    {
-      "name": "Available",
-      "monthlyRevenue": {
-        "January": 12338,
-        "February": 18076,
-        "March": 3498,
-        "April": 18759,
-        "May": 6828,
-        "June": 5789,
-        "July": 16960,
-        "August": 7926,
-        "September": 1511,
-        "October": 18948,
-        "November": 15534,
-        "December": 9189
-      }
-    },
+
     {
       "name": "Hot",
       "monthlyRevenue": {
