@@ -32,18 +32,27 @@ const BarChartComponent = () => {
 
   useEffect(() => {
     const months = Object.keys(mockData.products[0].monthlyRevenue);
-    const datasets = mockData.products.map((product, index) => ({
-      label: product.name,
-      data: months.map((month) => product.monthlyRevenue[month]),
-      backgroundColor: `rgba(${255 - index * 12}, ${99 + index * 6}, ${
-        132 + index * 6
-      }, 0.5)`,
-    }));
+    const datasets = mockData.products.map((product, index) => {
+      const isSelected =
+        visibleProduct === 'All' || product.name === visibleProduct;
+      const color = isSelected
+        ? `rgba(${255 - index * 12}, ${99 + index * 6}, ${
+            132 + index * 6
+          }, 0.5)`
+        : `rgba(200, 200, 200, 0.5)`;
+
+      return {
+        label: product.name,
+        data: months.map((month) => product.monthlyRevenue[month]),
+        backgroundColor: color,
+      };
+    });
+
     setData({
       labels: months,
       datasets: datasets,
     });
-  }, []);
+  }, [visibleProduct]);
 
   const exportToCSV = () => {
     const productData =
