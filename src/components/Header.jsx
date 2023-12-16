@@ -4,12 +4,8 @@ import { UserOutlined, SearchOutlined } from '@ant-design/icons';
 const Header = () => {
   const menu = (
     <Menu>
-      <Menu.Item key='0'>
-        <a href='/profile'>Profile</a>
-      </Menu.Item>
-      <Menu.Item key='1'>
-        <a href='/settings'>Settings</a>
-      </Menu.Item>
+      <Menu.Item key='0'>Profile</Menu.Item>
+      <Menu.Item key='1'>Settings</Menu.Item>
       <Menu.Divider />
       <Menu.Item key='3'>Log out</Menu.Item>
     </Menu>
