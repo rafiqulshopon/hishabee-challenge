@@ -8,7 +8,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className='full-screen w-64 bg-white shadow-md mb-4 rounded-lg'>
+    <div className='w-64 bg-white'>
       <Menu
         mode='inline'
         defaultSelectedKeys={['1']}

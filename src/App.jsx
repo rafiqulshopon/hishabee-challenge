@@ -4,7 +4,9 @@ import MainContent from './components/MainContent';
 function App() {
   return (
     <div className='flex'>
-      <Sidebar />
+      <div className='hidden md:flex mb-4 shadow-md rounded-lg'>
+        <Sidebar />
+      </div>
       <div className='flex-1'>
         <Header />
         <main>
