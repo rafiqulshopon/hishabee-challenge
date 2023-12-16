@@ -9,7 +9,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import { Button, Dropdown, Menu } from 'antd';
+import { Button, Dropdown, Menu, Tabs } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import FileSaver from 'file-saver';
 import mockData from '../helpers/data.json';
@@ -23,7 +23,10 @@ ChartJS.register(
   Legend
 );
 
+const { TabPane } = Tabs;
+
 const BarChartComponent = () => {
+  const [activeTab, setActiveTab] = useState('firstHalf');
   const [data, setData] = useState({
     labels: [],
     datasets: [],
@@ -31,7 +34,12 @@ const BarChartComponent = () => {
   const [visibleProduct, setVisibleProduct] = useState('All');
 
   useEffect(() => {
-    const months = Object.keys(mockData.products[0].monthlyRevenue);
+    const allMonths = Object.keys(mockData.products[0].monthlyRevenue);
+    const months =
+      activeTab === 'firstHalf'
+        ? allMonths.slice(0, 6)
+        : allMonths.slice(6, 12);
+
     const datasets = mockData.products.map((product, index) => {
       const isSelected =
         visibleProduct === 'All' || product.name === visibleProduct;
@@ -52,22 +60,26 @@ const BarChartComponent = () => {
       labels: months,
       datasets: datasets,
     });
-  }, [visibleProduct]);
+  }, [visibleProduct, activeTab]);
 
   const exportToCSV = () => {
+    const months = Object.keys(mockData.products[0].monthlyRevenue);
+    const headers = `Product Name,${months.join(',')}\n`;
+
     const productData =
       visibleProduct === 'All'
         ? mockData.products
         : mockData.products.filter(
             (product) => product.name === visibleProduct
           );
-    const csvContent =
-      'data:text/csv;charset=utf-8,' +
-      productData
-        .map((p) => {
-          return `${p.name},${Object.values(p.monthlyRevenue).join(',')}`;
-        })
-        .join('\n');
+
+    const csvRows = productData.map((p) => {
+      return `${p.name},${Object.values(p.monthlyRevenue).join(',')}`;
+    });
+
+    const csvContent = `data:text/csv;charset=utf-8,${headers}${csvRows.join(
+      '\n'
+    )}`;
     const encodedUri = encodeURI(csvContent);
     FileSaver.saveAs(encodedUri, `products_data-${visibleProduct}.csv`);
   };
@@ -114,6 +126,10 @@ const BarChartComponent = () => {
         >
           Export Data
         </Button>
+        <Tabs defaultActiveKey='firstHalf' onChange={setActiveTab}>
+          <TabPane tab='First 6 Months' key='firstHalf' />
+          <TabPane tab='Last 6 Months' key='secondHalf' />
+        </Tabs>
       </div>
       <Bar data={data} options={options} />
     </>
