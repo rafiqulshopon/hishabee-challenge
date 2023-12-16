@@ -44,7 +44,7 @@ const BarChartComponent = () => {
       const isSelected =
         visibleProduct === 'All' || product.name === visibleProduct;
       const color = isSelected
-        ? `hsl(${(index * 360) / mockData.products.length}, 70%, 60%)`
+        ? `hsl(${(index * 360) / mockData.products.length}, 100%, 85%)`
         : `rgba(200, 200, 200, 0.5)`;
 
       return {
